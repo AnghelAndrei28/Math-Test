@@ -82,6 +82,10 @@ namespace Math_Test
                 {
                     timeLeft = timeLeft - 1;
                     timeLabel.Text = timeLeft + " seconds";
+                    if(timeLeft <= 5)
+                    {
+                    timeLabel.BackColor = Color.Red;
+                    }
                 }
                 else
                 {
